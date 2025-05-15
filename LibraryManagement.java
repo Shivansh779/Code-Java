@@ -54,7 +54,7 @@ public class LibraryManagement {
         int userChoice = sc.nextInt();
         while (true) {
             if (userChoice == 1) {
-                Student();
+                Customer();
             } else if (userChoice == 2) {
                 Librarian();
             } else {
