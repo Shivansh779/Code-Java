@@ -5,7 +5,7 @@ public class LibraryManagement {
     public static final Scanner sc = new Scanner(System.in);
     public static final Librarian librarian = new Librarian();
 
-    public static void Student() {
+    public static void Customer() {
         System.out.println("Welcome, Enter your desired action from the list below");
         System.out.print("1. View Books in Library \n2. View Borrowed Books \n3. Exit \nEnter: ");
         int choice = sc.nextInt();
