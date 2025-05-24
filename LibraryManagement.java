@@ -48,17 +48,18 @@ public class LibraryManagement {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
         System.out.println("Welcome To The Library!");
         System.out.print("Please identify yourself as a: \n1. Customer \n2. Librarian \nEnter: ");
         int userChoice = sc.nextInt();
-        while (true) {
+        boolean cont = true;
+        while (cont) {
             if (userChoice == 1) {
                 Customer();
             } else if (userChoice == 2) {
                 Librarian();
             } else {
                 System.out.println("Invalid Option!");
+                cont = false;
             }
         }
     }
